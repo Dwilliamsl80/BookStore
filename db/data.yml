@@ -1,0 +1,1502 @@
+
+---
+ar_internal_metadata:
+  columns:
+  - key
+  - value
+  - created_at
+  - updated_at
+  records: 
+  - - environment
+    - development
+    - 2017-11-27 16:13:28.000000000 Z
+    - 2017-11-27 16:13:28.000000000 Z
+
+---
+books:
+  columns:
+  - id
+  - title
+  - author
+  - category
+  - pages
+  - publisher
+  - price
+  records: 
+  - - 1
+    - Fundamentals of Wavelets
+    - Goswami Jaideva
+    - signal_processing
+    - 228
+    - "Wiley\r"
+    - !ruby/object:BigDecimal 18:0.6299E2
+  - - 2
+    - Data Smart
+    - Foreman John
+    - data_science
+    - 235
+    - "Wiley\r"
+    - !ruby/object:BigDecimal 18:0.6999E2
+  - - 3
+    - God Created the Integers
+    - Hawking Stephen
+    - mathematics
+    - 197
+    - "Penguin\r"
+    - !ruby/object:BigDecimal 18:0.6299E2
+  - - 4
+    - Superfreakonomics
+    - Dubner Stephen
+    - economics
+    - 179
+    - "HarperCollins\r"
+    - !ruby/object:BigDecimal 18:0.5499E2
+  - - 5
+    - Orientalism
+    - Said Edward
+    - history
+    - 197
+    - "Penguin\r"
+    - !ruby/object:BigDecimal 18:0.8499E2
+  - - 6
+    - Nature of Statistical Learning Theory The
+    - Vapnik Vladimir
+    - data_science
+    - 230
+    - "Springer\r"
+    - !ruby/object:BigDecimal 18:0.5999E2
+  - - 7
+    - Integration of the Indian States
+    - Menon V P
+    - history
+    - 217
+    - "Orient Blackswan\r"
+    - !ruby/object:BigDecimal 18:0.9199E2
+  - - 8
+    - Drunkard's Walk The
+    - Mlodinow Leonard
+    - mathematics
+    - 197
+    - "Penguin\r"
+    - !ruby/object:BigDecimal 18:0.7999E2
+  - - 9
+    - Image Processing & Mathematical Morphology
+    - Shih Frank
+    - signal_processing
+    - 241
+    - "CRC\r"
+    - !ruby/object:BigDecimal 18:0.7499E2
+  - - 10
+    - How to Think Like Sherlock Holmes
+    - Konnikova Maria
+    - psychology
+    - 240
+    - "Penguin\r"
+    - !ruby/object:BigDecimal 18:0.8199E2
+  - - 11
+    - Data Scientists at Work
+    - Sebastian Gutierrez
+    - data_science
+    - 230
+    - "Apress\r"
+    - !ruby/object:BigDecimal 18:0.8699E2
+  - - 12
+    - Slaughterhouse Five
+    - Vonnegut Kurt
+    - classic
+    - 198
+    - "Random House\r"
+    - !ruby/object:BigDecimal 18:0.8999E2
+  - - 13
+    - Birth of a Theorem
+    - Villani Cedric
+    - mathematics
+    - 234
+    - "Bodley Head\r"
+    - !ruby/object:BigDecimal 18:0.8499E2
+  - - 14
+    - Structure & Interpretation of Computer Programs
+    - Sussman Gerald
+    - computer_science
+    - 240
+    - "MIT Press\r"
+    - !ruby/object:BigDecimal 18:0.5699E2
+  - - 15
+    - Age of Wrath The
+    - Eraly Abraham
+    - history
+    - 238
+    - "Penguin\r"
+    - !ruby/object:BigDecimal 18:0.7699E2
+  - - 16
+    - Trial The
+    - Kafka Frank
+    - classic
+    - 198
+    - "Random House\r"
+    - !ruby/object:BigDecimal 18:0.6599E2
+  - - 17
+    - Statistical Decision Theory'
+    - Pratt John
+    - data_science
+    - 236
+    - "MIT Press\r"
+    - !ruby/object:BigDecimal 18:0.9899E2
+  - - 18
+    - Data Mining Handbook
+    - Nisbet Robert
+    - data_science
+    - 242
+    - "Apress\r"
+    - !ruby/object:BigDecimal 18:0.9799E2
+  - - 19
+    - New Machiavelli The
+    - Wells H. G.
+    - novel
+    - 180
+    - "Penguin\r"
+    - !ruby/object:BigDecimal 18:0.8899E2
+  - - 20
+    - Physics & Philosophy
+    - Heisenberg Werner
+    - science
+    - 197
+    - "Penguin\r"
+    - !ruby/object:BigDecimal 18:0.5099E2
+  - - 21
+    - Making Software
+    - Oram Andy
+    - computer_science
+    - 232
+    - "O'Reilly\r"
+    - !ruby/object:BigDecimal 18:0.8799E2
+  - - 22
+    - Analysis Vol I
+    - Tao Terence
+    - mathematics
+    - 248
+    - "HBA\r"
+    - !ruby/object:BigDecimal 18:0.8799E2
+  - - 23
+    - Machine Learning for Hackers
+    - Conway Drew
+    - data_science
+    - 233
+    - "O'Reilly\r"
+    - !ruby/object:BigDecimal 18:0.7399E2
+  - - 24
+    - Signal and the Noise The
+    - Silver Nate
+    - data_science
+    - 233
+    - "Penguin\r"
+    - !ruby/object:BigDecimal 18:0.5699E2
+  - - 25
+    - Python for Data Analysis
+    - McKinney Wes
+    - data_science
+    - 233
+    - "O'Reilly\r"
+    - !ruby/object:BigDecimal 18:0.6299E2
+  - - 26
+    - Introduction to Algorithms
+    - Cormen Thomas
+    - computer_science
+    - 234
+    - "MIT Press\r"
+    - !ruby/object:BigDecimal 18:0.9399E2
+  - - 27
+    - Beautiful and the Damned The
+    - Deb Siddhartha
+    - history
+    - 198
+    - "Penguin\r"
+    - !ruby/object:BigDecimal 18:0.7799E2
+  - - 28
+    - Outsider The
+    - Camus Albert
+    - classic
+    - 198
+    - "Penguin\r"
+    - !ruby/object:BigDecimal 18:0.5699E2
+  - - 29
+    - Complete Sherlock Holmes The - Vol I
+    - Doyle Arthur Conan
+    - classic
+    - 176
+    - "Random House\r"
+    - !ruby/object:BigDecimal 18:0.5199E2
+  - - 30
+    - Complete Sherlock Holmes The - Vol II
+    - Doyle Arthur Conan
+    - classic
+    - 176
+    - "Random House\r"
+    - !ruby/object:BigDecimal 18:0.8699E2
+  - - 31
+    - Wealth of Nations The
+    - Smith Adam
+    - economics
+    - 175
+    - "Random House\r"
+    - !ruby/object:BigDecimal 18:0.8099E2
+  - - 32
+    - Pillars of the Earth The
+    - Follett Ken
+    - novel
+    - 176
+    - "Random House\r"
+    - !ruby/object:BigDecimal 18:0.9199E2
+  - - 33
+    - Mein Kampf
+    - Hitler Adolf
+    - autobiography
+    - 212
+    - "Rupa\r"
+    - !ruby/object:BigDecimal 18:0.6499E2
+  - - 34
+    - Tao of Physics The
+    - Capra Fritjof
+    - physics
+    - 179
+    - "Penguin\r"
+    - !ruby/object:BigDecimal 18:0.9999E2
+  - - 35
+    - Surely You're Joking Mr Feynman
+    - Feynman Richard
+    - physics
+    - 198
+    - "Random House\r"
+    - !ruby/object:BigDecimal 18:0.5299E2
+  - - 36
+    - Farewell to Arms A
+    - Hemingway Ernest
+    - classic
+    - 179
+    - "Rupa\r"
+    - !ruby/object:BigDecimal 18:0.6699E2
+  - - 37
+    - Veteran The
+    - Forsyth Frederick
+    - novel
+    - 177
+    - "Transworld\r"
+    - !ruby/object:BigDecimal 18:0.7399E2
+  - - 38
+    - False Impressions
+    - Archer Jeffery
+    - novel
+    - 177
+    - "Pan\r"
+    - !ruby/object:BigDecimal 18:0.6799E2
+  - - 39
+    - Last Lecture The
+    - Pausch Randy
+    - autobiography
+    - 197
+    - "Hyperion\r"
+    - !ruby/object:BigDecimal 18:0.6799E2
+  - - 40
+    - Return of the Primitive
+    - Rand Ayn
+    - objectivism
+    - 202
+    - "Penguin\r"
+    - !ruby/object:BigDecimal 18:0.8699E2
+  - - 41
+    - Jurassic Park
+    - Crichton Michael
+    - novel
+    - 174
+    - "Random House\r"
+    - !ruby/object:BigDecimal 18:0.7999E2
+  - - 42
+    - Russian Journal A
+    - Steinbeck John
+    - history
+    - 196
+    - "Penguin\r"
+    - !ruby/object:BigDecimal 18:0.8599E2
+  - - 43
+    - Tales of Mystery and Imagination
+    - Poe Edgar Allen
+    - classic
+    - 172
+    - "HarperCollins\r"
+    - !ruby/object:BigDecimal 18:0.9199E2
+  - - 44
+    - Freakonomics
+    - Dubner Stephen
+    - economics
+    - 197
+    - "Penguin\r"
+    - !ruby/object:BigDecimal 18:0.9899E2
+  - - 45
+    - Hidden Connections The
+    - Capra Fritjof
+    - physics
+    - 197
+    - "HarperCollins\r"
+    - !ruby/object:BigDecimal 18:0.6899E2
+  - - 46
+    - Story of Philosophy The
+    - Durant Will
+    - history
+    - 170
+    - "Pocket\r"
+    - !ruby/object:BigDecimal 18:0.9699E2
+  - - 47
+    - Asami Asami
+    - Deshpande P L
+    - novel
+    - 205
+    - "Mauj\r"
+    - !ruby/object:BigDecimal 18:0.7699E2
+  - - 48
+    - Journal of a Novel
+    - Steinbeck John
+    - classic
+    - 196
+    - "Penguin\r"
+    - !ruby/object:BigDecimal 18:0.9199E2
+  - - 49
+    - Once There Was a War
+    - Steinbeck John
+    - history
+    - 196
+    - "Penguin\r"
+    - !ruby/object:BigDecimal 18:0.8199E2
+  - - 50
+    - Moon is Down The
+    - Steinbeck John
+    - classic
+    - 196
+    - "Penguin\r"
+    - !ruby/object:BigDecimal 18:0.8099E2
+  - - 51
+    - Brethren The
+    - Grisham John
+    - novel
+    - 174
+    - "Random House\r"
+    - !ruby/object:BigDecimal 18:0.5799E2
+  - - 52
+    - In a Free State
+    - Naipaul V. S.
+    - novel
+    - 196
+    - "Rupa\r"
+    - !ruby/object:BigDecimal 18:0.9699E2
+  - - 53
+    - Catch 22
+    - Heller Joseph
+    - classic
+    - 178
+    - "Random House\r"
+    - !ruby/object:BigDecimal 18:0.6199E2
+  - - 54
+    - Complete Mastermind The
+    - BBC
+    - trivia
+    - 178
+    - "BBC\r"
+    - !ruby/object:BigDecimal 18:0.6899E2
+  - - 55
+    - Dylan on Dylan
+    - Dylan Bob
+    - autobiography
+    - 197
+    - "Random House\r"
+    - !ruby/object:BigDecimal 18:0.5799E2
+  - - 56
+    - Soft Computing & Intelligent Systems
+    - Gupta Madan
+    - data_science
+    - 242
+    - "Elsevier\r"
+    - !ruby/object:BigDecimal 18:0.8399E2
+  - - 57
+    - Textbook of Economic Theory
+    - Stonier Alfred
+    - economics
+    - 242
+    - "Pearson\r"
+    - !ruby/object:BigDecimal 18:0.9399E2
+  - - 58
+    - Econometric Analysis
+    - Greene W. H.
+    - economics
+    - 242
+    - "Pearson\r"
+    - !ruby/object:BigDecimal 18:0.6599E2
+  - - 59
+    - Learning OpenCV
+    - Bradsky Gary
+    - signal_processing
+    - 232
+    - "O'Reilly\r"
+    - !ruby/object:BigDecimal 18:0.9999E2
+  - - 60
+    - Data Structures Using C & C++
+    - Tanenbaum Andrew
+    - computer_science
+    - 235
+    - "Prentice Hall\r"
+    - !ruby/object:BigDecimal 18:0.5099E2
+  - - 61
+    - Computer Vision A Modern Approach
+    - Forsyth David
+    - signal_processing
+    - 255
+    - "Pearson\r"
+    - !ruby/object:BigDecimal 18:0.5499E2
+  - - 62
+    - Principles of Communication Systems
+    - Taub Schilling
+    - signal_processing
+    - 240
+    - "TMH\r"
+    - !ruby/object:BigDecimal 18:0.7099E2
+  - - 63
+    - Let Us C
+    - Kanetkar Yashwant
+    - computer_science
+    - 213
+    - "Prentice Hall\r"
+    - !ruby/object:BigDecimal 18:0.8899E2
+  - - 64
+    - Amulet of Samarkand The
+    - Stroud Jonathan
+    - novel
+    - 179
+    - "Random House\r"
+    - !ruby/object:BigDecimal 18:0.8099E2
+  - - 65
+    - Crime and Punishment
+    - Dostoevsky Fyodor
+    - classic
+    - 180
+    - "Penguin\r"
+    - !ruby/object:BigDecimal 18:0.8699E2
+  - - 66
+    - Angels & Demons
+    - Brown Dan
+    - novel
+    - 178
+    - "Random House\r"
+    - !ruby/object:BigDecimal 18:0.8999E2
+  - - 67
+    - Argumentative Indian The
+    - Sen Amartya
+    - history
+    - 209
+    - "Picador\r"
+    - !ruby/object:BigDecimal 18:0.9099E2
+  - - 68
+    - Sea of Poppies
+    - Ghosh Amitav
+    - novel
+    - 197
+    - "Penguin\r"
+    - !ruby/object:BigDecimal 18:0.8499E2
+  - - 69
+    - Idea of Justice The
+    - Sen Amartya
+    - economics
+    - 212
+    - "Penguin\r"
+    - !ruby/object:BigDecimal 18:0.5099E2
+  - - 70
+    - Raisin in the Sun A
+    - Hansberry Lorraine
+    - novel
+    - 175
+    - "Penguin\r"
+    - !ruby/object:BigDecimal 18:0.9999E2
+  - - 71
+    - All the President's Men
+    - Woodward Bob
+    - history
+    - 177
+    - "Random House\r"
+    - !ruby/object:BigDecimal 18:0.9799E2
+  - - 72
+    - Prisoner of Birth A
+    - Archer Jeffery
+    - novel
+    - 176
+    - "Pan\r"
+    - !ruby/object:BigDecimal 18:0.8699E2
+  - - 73
+    - Scoop!
+    - Nayar Kuldip
+    - history
+    - 216
+    - "HarperCollins\r"
+    - !ruby/object:BigDecimal 18:0.9299E2
+  - - 74
+    - Ahe Manohar Tari
+    - Deshpande Sunita
+    - autobiography
+    - 213
+    - "Mauj\r"
+    - !ruby/object:BigDecimal 18:0.9999E2
+  - - 75
+    - Last Mughal The
+    - Dalrymple William
+    - history
+    - 199
+    - "Penguin\r"
+    - !ruby/object:BigDecimal 18:0.7399E2
+  - - 76
+    - Social Choice & Welfare Vol 39 No. 1
+    - Various
+    - economics
+    - 235
+    - "Springer\r"
+    - !ruby/object:BigDecimal 18:0.6799E2
+  - - 77
+    - Radiowaril Bhashane & Shrutika
+    - Deshpande P L
+    - misc
+    - 213
+    - "Mauj\r"
+    - !ruby/object:BigDecimal 18:0.6699E2
+  - - 78
+    - Gun Gayin Awadi
+    - Deshpande P L
+    - misc
+    - 212
+    - "Mauj\r"
+    - !ruby/object:BigDecimal 18:0.8299E2
+  - - 79
+    - Aghal Paghal
+    - Deshpande P L
+    - misc
+    - 212
+    - "Mauj\r"
+    - !ruby/object:BigDecimal 18:0.6099E2
+  - - 80
+    - Maqta-e-Ghalib
+    - Garg Sanjay
+    - poetry
+    - 221
+    - "Mauj\r"
+    - !ruby/object:BigDecimal 18:0.5399E2
+  - - 81
+    - Beyond Degrees
+    - ''
+    - education
+    - 222
+    - "HarperCollins\r"
+    - !ruby/object:BigDecimal 18:0.8999E2
+  - - 82
+    - Manasa
+    - Kale V P
+    - misc
+    - 213
+    - "Mauj\r"
+    - !ruby/object:BigDecimal 18:0.8399E2
+  - - 83
+    - India from Midnight to Milennium
+    - Tharoor Shashi
+    - history
+    - 198
+    - "Penguin\r"
+    - !ruby/object:BigDecimal 18:0.5199E2
+  - - 84
+    - World's Greatest Trials The
+    - ''
+    - history
+    - 210
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.5699E2
+  - - 85
+    - Great Indian Novel The
+    - Tharoor Shashi
+    - novel
+    - 198
+    - "Penguin\r"
+    - !ruby/object:BigDecimal 18:0.7999E2
+  - - 86
+    - O Jerusalem!
+    - Lapierre Dominique
+    - history
+    - 217
+    - "vikas\r"
+    - !ruby/object:BigDecimal 18:0.7499E2
+  - - 87
+    - City of Joy The
+    - Lapierre Dominique
+    - novel
+    - 177
+    - "vikas\r"
+    - !ruby/object:BigDecimal 18:0.8799E2
+  - - 88
+    - Freedom at Midnight
+    - Lapierre Dominique
+    - history
+    - 167
+    - "vikas\r"
+    - !ruby/object:BigDecimal 18:0.6199E2
+  - - 89
+    - Winter of Our Discontent The
+    - Steinbeck John
+    - classic
+    - 196
+    - "Penguin\r"
+    - !ruby/object:BigDecimal 18:0.9799E2
+  - - 90
+    - On Education
+    - Russell Bertrand
+    - education
+    - 203
+    - "Routledge\r"
+    - !ruby/object:BigDecimal 18:0.5199E2
+  - - 91
+    - Free Will
+    - Harris Sam
+    - psychology
+    - 203
+    - "FreePress\r"
+    - !ruby/object:BigDecimal 18:0.6399E2
+  - - 92
+    - Bookless in Baghdad
+    - Tharoor Shashi
+    - history
+    - 206
+    - "Penguin\r"
+    - !ruby/object:BigDecimal 18:0.6399E2
+  - - 93
+    - Case of the Lame Canary The
+    - Gardner Earle Stanley
+    - novel
+    - 179
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.7999E2
+  - - 94
+    - Theory of Everything The
+    - Hawking Stephen
+    - physics
+    - 217
+    - "Jaico\r"
+    - !ruby/object:BigDecimal 18:0.5499E2
+  - - 95
+    - New Markets & Other Essays
+    - Drucker Peter
+    - economics
+    - 176
+    - "Penguin\r"
+    - !ruby/object:BigDecimal 18:0.8299E2
+  - - 96
+    - Electric Universe
+    - Bodanis David
+    - physics
+    - 201
+    - "Penguin\r"
+    - !ruby/object:BigDecimal 18:0.5199E2
+  - - 97
+    - Hunchback of Notre Dame The
+    - Hugo Victor
+    - classic
+    - 175
+    - "Random House\r"
+    - !ruby/object:BigDecimal 18:0.6199E2
+  - - 98
+    - Burning Bright
+    - Steinbeck John
+    - classic
+    - 175
+    - "Penguin\r"
+    - !ruby/object:BigDecimal 18:0.5099E2
+  - - 99
+    - Age of Discontuinity The
+    - Drucker Peter
+    - economics
+    - 178
+    - "Random House\r"
+    - !ruby/object:BigDecimal 18:0.6899E2
+  - - 100
+    - Doctor in the Nude
+    - Gordon Richard
+    - novel
+    - 179
+    - "Penguin\r"
+    - !ruby/object:BigDecimal 18:0.8999E2
+  - - 101
+    - Down and Out in Paris & London
+    - Orwell George
+    - autobiography
+    - 179
+    - "Penguin\r"
+    - !ruby/object:BigDecimal 18:0.9499E2
+  - - 102
+    - Identity & Violence
+    - Sen Amartya
+    - philosophy
+    - 219
+    - "Penguin\r"
+    - !ruby/object:BigDecimal 18:0.5399E2
+  - - 103
+    - Beyond the Three Seas
+    - Dalrymple William
+    - history
+    - 197
+    - "Random House\r"
+    - !ruby/object:BigDecimal 18:0.8499E2
+  - - 104
+    - World's Greatest Short Stories The
+    - ''
+    - classic
+    - 217
+    - "Jaico\r"
+    - !ruby/object:BigDecimal 18:0.5999E2
+  - - 105
+    - Talking Straight
+    - Iacoca Lee
+    - autobiography
+    - 175
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.9699E2
+  - - 106
+    - Maugham's Collected Short Stories Vol 3
+    - Maugham William S
+    - classic
+    - 171
+    - "Vintage\r"
+    - !ruby/object:BigDecimal 18:0.5399E2
+  - - 107
+    - Phantom of Manhattan The
+    - Forsyth Frederick
+    - classic
+    - 180
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.7999E2
+  - - 108
+    - Ashenden of The British Agent
+    - Maugham William S
+    - classic
+    - 160
+    - "Vintage\r"
+    - !ruby/object:BigDecimal 18:0.8699E2
+  - - 109
+    - Zen & The Art of Motorcycle Maintenance
+    - Pirsig Robert
+    - autobiography
+    - 172
+    - "Vintage\r"
+    - !ruby/object:BigDecimal 18:0.9499E2
+  - - 110
+    - Great War for Civilization The
+    - Fisk Robert
+    - history
+    - 197
+    - "HarperCollins\r"
+    - !ruby/object:BigDecimal 18:0.6099E2
+  - - 111
+    - We the Living
+    - Rand Ayn
+    - novel
+    - 178
+    - "Penguin\r"
+    - !ruby/object:BigDecimal 18:0.6999E2
+  - - 112
+    - Artist and the Mathematician The
+    - Aczel Amir
+    - mathematics
+    - 186
+    - "HighStakes\r"
+    - !ruby/object:BigDecimal 18:0.6899E2
+  - - 113
+    - History of Western Philosophy
+    - Russell Bertrand
+    - philosophy
+    - 213
+    - "Routledge\r"
+    - !ruby/object:BigDecimal 18:0.8099E2
+  - - 114
+    - Selected Short Stories
+    - ''
+    - classic
+    - 215
+    - "Jaico\r"
+    - !ruby/object:BigDecimal 18:0.9899E2
+  - - 115
+    - Rationality & Freedom
+    - Sen Amartya
+    - economics
+    - 213
+    - "Springer\r"
+    - !ruby/object:BigDecimal 18:0.5299E2
+  - - 116
+    - Clash of Civilizations and Remaking of the World Order
+    - Huntington Samuel
+    - history
+    - 228
+    - "Simon&Schuster\r"
+    - !ruby/object:BigDecimal 18:0.6599E2
+  - - 117
+    - Uncommon Wisdom
+    - Capra Fritjof
+    - anthology
+    - 197
+    - "Fontana\r"
+    - !ruby/object:BigDecimal 18:0.7199E2
+  - - 118
+    - One
+    - Bach Richard
+    - autobiography
+    - 172
+    - "Dell\r"
+    - !ruby/object:BigDecimal 18:0.5999E2
+  - - 119
+    - Karl Marx Biography
+    - ''
+    - autobiography
+    - 162
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.8499E2
+  - - 120
+    - To Sir With Love
+    - Braithwaite
+    - classic
+    - 197
+    - "Penguin\r"
+    - !ruby/object:BigDecimal 18:0.9199E2
+  - - 121
+    - Half A Life
+    - Naipaul V S
+    - novel
+    - 196
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.5699E2
+  - - 122
+    - Discovery of India The
+    - Nehru Jawaharlal
+    - history
+    - 230
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.5599E2
+  - - 123
+    - Apulki
+    - Deshpande P L
+    - misc
+    - 211
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.5799E2
+  - - 124
+    - Unpopular Essays
+    - Russell Bertrand
+    - philosophy
+    - 198
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.7099E2
+  - - 125
+    - Deceiver The
+    - Forsyth Frederick
+    - novel
+    - 178
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.7999E2
+  - - 126
+    - 'Veil: Secret Wars of the CIA'
+    - Woodward Bob
+    - history
+    - 171
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.8799E2
+  - - 127
+    - Char Shabda
+    - Deshpande P L
+    - misc
+    - 214
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.9799E2
+  - - 128
+    - Rosy is My Relative
+    - Durrell Gerald
+    - novel
+    - 176
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.7599E2
+  - - 129
+    - Moon and Sixpence The
+    - Maugham William S
+    - classic
+    - 180
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.8399E2
+  - - 130
+    - Political Philosophers
+    - ''
+    - politics
+    - 162
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.9299E2
+  - - 131
+    - Short History of the World A
+    - Wells H G
+    - history
+    - 197
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.6199E2
+  - - 132
+    - Trembling of a Leaf The
+    - Maugham William S
+    - novel
+    - 205
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.7999E2
+  - - 133
+    - Doctor on the Brain
+    - Gordon Richard
+    - novel
+    - 204
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.6299E2
+  - - 134
+    - Simpsons & Their Mathematical Secrets
+    - Singh Simon
+    - mathematics
+    - 233
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.7399E2
+  - - 135
+    - Pattern Classification
+    - Duda Hart
+    - data_science
+    - 241
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.8299E2
+  - - 136
+    - From Beirut to Jerusalem
+    - Friedman Thomas
+    - history
+    - 202
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.9299E2
+  - - 137
+    - Code Book The
+    - Singh Simon
+    - mathematics
+    - 197
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.6599E2
+  - - 138
+    - Age of the Warrior The
+    - Fisk Robert
+    - history
+    - 197
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.9999E2
+  - - 139
+    - Final Crisis
+    - ''
+    - comic
+    - 257
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.5099E2
+  - - 140
+    - Killing Joke The
+    - ''
+    - comic
+    - 283
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.5499E2
+  - - 141
+    - Flashpoint
+    - ''
+    - comic
+    - 265
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.7099E2
+  - - 142
+    - Batman Earth One
+    - ''
+    - comic
+    - 265
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.8899E2
+  - - 143
+    - Crisis on Infinite Earths
+    - ''
+    - comic
+    - 258
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.8199E2
+  - - 144
+    - Numbers Behind Numb3rs The
+    - Devlin Keith
+    - mathematics
+    - 202
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.9399E2
+  - - 145
+    - Superman Earth One - 1
+    - ''
+    - comic
+    - 259
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.7099E2
+  - - 146
+    - Superman Earth One - 2
+    - ''
+    - comic
+    - 258
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.7299E2
+  - - 147
+    - 'Justice League: Throne of Atlantis'
+    - ''
+    - comic
+    - 258
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.5199E2
+  - - 148
+    - 'Justice League: The Villain''s Journey'
+    - ''
+    - comic
+    - 258
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.8999E2
+  - - 149
+    - Death of Superman The
+    - ''
+    - comic
+    - 258
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.9399E2
+  - - 150
+    - History of the DC Universe
+    - ''
+    - comic
+    - 258
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.9999E2
+  - - 151
+    - 'Batman: The Long Halloween'
+    - ''
+    - comic
+    - 258
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.6899E2
+  - - 152
+    - Life in Letters A
+    - Steinbeck John
+    - autobiography
+    - 196
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.9399E2
+  - - 153
+    - Information The
+    - Gleick James
+    - mathematics
+    - 233
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.6099E2
+  - - 154
+    - Journal of Economics vol 106 No 3
+    - ''
+    - economics
+    - 235
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.7099E2
+  - - 155
+    - Elements of Information Theory
+    - Thomas Joy
+    - signal_processing
+    - 229
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.7499E2
+  - - 156
+    - Power Electronics - Rashid
+    - Rashid Muhammad
+    - computer_science
+    - 235
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.6099E2
+  - - 157
+    - Power Electronics - Mohan
+    - Mohan Ned
+    - computer_science
+    - 237
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.7699E2
+  - - 158
+    - Neural Networks
+    - Haykin Simon
+    - data_science
+    - 240
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.5399E2
+  - - 159
+    - Grapes of Wrath The
+    - Steinbeck John
+    - classic
+    - 196
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.8599E2
+  - - 160
+    - Vyakti ani Valli
+    - Deshpande P L
+    - misc
+    - 211
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.6799E2
+  - - 161
+    - Statistical Learning Theory
+    - Vapnik Vladimir
+    - data_science
+    - 228
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.8099E2
+  - - 162
+    - Empire of the Mughal - The Tainted Throne
+    - Rutherford Alex
+    - history
+    - 180
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.9999E2
+  - - 163
+    - Empire of the Mughal - Brothers at War
+    - Rutherford Alex
+    - history
+    - 180
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.5899E2
+  - - 164
+    - Empire of the Mughal - Ruler of the World
+    - Rutherford Alex
+    - history
+    - 180
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.9399E2
+  - - 165
+    - Empire of the Mughal - The Serpent's Tooth
+    - Rutherford Alex
+    - history
+    - 180
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.9199E2
+  - - 166
+    - Empire of the Mughal - Raiders from the North
+    - Rutherford Alex
+    - history
+    - 180
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.7899E2
+  - - 167
+    - Mossad
+    - Baz-Zohar Michael
+    - history
+    - 236
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.6699E2
+  - - 168
+    - Jim Corbett Omnibus
+    - Corbett Jim
+    - history
+    - 223
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.9899E2
+  - - 169
+    - 20000 Leagues Under the Sea
+    - Verne Jules
+    - novel
+    - 190
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.9199E2
+  - - 170
+    - Batatyachi Chal
+    - Deshpande P L
+    - novel
+    - 200
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.6299E2
+  - - 171
+    - Hafasavnuk
+    - Deshpande P L
+    - novel
+    - 211
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.8799E2
+  - - 172
+    - Urlasurla
+    - Deshpande P L
+    - novel
+    - 211
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.5099E2
+  - - 173
+    - Pointers in C
+    - Kanetkar Yashwant
+    - computer_science
+    - 213
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.8999E2
+  - - 174
+    - Cathedral and the Bazaar The
+    - Raymond Eric
+    - computer_science
+    - 217
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.9499E2
+  - - 175
+    - Design with OpAmps
+    - Franco Sergio
+    - computer_science
+    - 240
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.5599E2
+  - - 176
+    - Think Complexity
+    - Downey Allen
+    - data_science
+    - 230
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.9299E2
+  - - 177
+    - Devil's Advocate The
+    - West Morris
+    - novel
+    - 178
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.9799E2
+  - - 178
+    - Ayn Rand Answers
+    - Rand Ayn
+    - objectivism
+    - 203
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.5799E2
+  - - 179
+    - 'Philosophy: Who Needs It'
+    - Rand Ayn
+    - objectivism
+    - 171
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.9699E2
+  - - 180
+    - World's Great Thinkers The
+    - ''
+    - physics
+    - 189
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.6199E2
+  - - 181
+    - Data Analysis with Open Source Tools
+    - Janert Phillip
+    - data_science
+    - 230
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.6599E2
+  - - 182
+    - Broca's Brain
+    - Sagan Carl
+    - physics
+    - 174
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.9599E2
+  - - 183
+    - Men of Mathematics
+    - Bell E T
+    - mathematics
+    - 217
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.7899E2
+  - - 184
+    - Oxford book of Modern Science Writing
+    - Dawkins Richard
+    - science
+    - 240
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.5599E2
+  - - 185
+    - Justice Judiciary and Democracy
+    - Ranjan Sudhanshu
+    - legal
+    - 224
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.9499E2
+  - - 186
+    - Arthashastra The
+    - Kautiyla
+    - philosophy
+    - 214
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.5699E2
+  - - 187
+    - We the People
+    - Palkhivala
+    - philosophy
+    - 216
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.9899E2
+  - - 188
+    - We the Nation
+    - Palkhivala
+    - philosophy
+    - 216
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.7299E2
+  - - 189
+    - Courtroom Genius The
+    - Sorabjee
+    - autobiography
+    - 217
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.6599E2
+  - - 190
+    - Dongri to Dubai
+    - Zaidi Hussain
+    - history
+    - 216
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.6299E2
+  - - 191
+    - History of England Foundation
+    - Ackroyd Peter
+    - history
+    - 197
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.6499E2
+  - - 192
+    - City of Djinns
+    - Dalrymple William
+    - history
+    - 198
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.8599E2
+  - - 193
+    - India's Legal System
+    - Nariman
+    - legal
+    - 177
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.8299E2
+  - - 194
+    - More Tears to Cry
+    - Sassoon Jean
+    - novel
+    - 235
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.5799E2
+  - - 195
+    - Ropemaker The
+    - Dickinson Peter
+    - novel
+    - 196
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.9199E2
+  - - 196
+    - Angels & Demons
+    - Brown Dan
+    - novel
+    - 170
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.8299E2
+  - - 197
+    - Judge The
+    - ''
+    - novel
+    - 170
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.8999E2
+  - - 198
+    - Attorney The
+    - ''
+    - novel
+    - 170
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.9999E2
+  - - 199
+    - Prince The
+    - Machiavelli
+    - classic
+    - 173
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.7899E2
+  - - 200
+    - Eyeless in Gaza
+    - Huxley Aldous
+    - novel
+    - 180
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.9699E2
+  - - 201
+    - Tales of Beedle the Bard
+    - Rowling J K
+    - novel
+    - 184
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.9499E2
+  - - 202
+    - Girl with the Dragon Tattoo
+    - Larsson Steig
+    - novel
+    - 179
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.8499E2
+  - - 203
+    - Girl who kicked the Hornet's Nest
+    - Larsson Steig
+    - novel
+    - 179
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.8699E2
+  - - 204
+    - Girl who played with Fire
+    - Larsson Steig
+    - novel
+    - 179
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.8099E2
+  - - 205
+    - Batman Handbook
+    - ''
+    - comic
+    - 270
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.9299E2
+  - - 206
+    - Murphy's Law
+    - ''
+    - psychology
+    - 178
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.7299E2
+  - - 207
+    - Structure and Randomness
+    - Tao Terence
+    - mathematics
+    - 252
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.8399E2
+  - - 208
+    - Image Processing with MATLAB
+    - Eddins Steve
+    - signal_processing
+    - 241
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.5099E2
+  - - 209
+    - Animal Farm
+    - Orwell George
+    - classic
+    - 180
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.5299E2
+  - - 210
+    - Idiot The
+    - Dostoevsky Fyodor
+    - classic
+    - 197
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.5899E2
+  - - 211
+    - Christmas Carol A
+    - Dickens Charles
+    - classic
+    - 196
+    - "\r"
+    - !ruby/object:BigDecimal 18:0.8799E2

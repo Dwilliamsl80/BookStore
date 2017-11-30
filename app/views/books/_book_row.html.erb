@@ -1,0 +1,19 @@
+        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <div class="card-body">
+              <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+              <h4 class="card-title">
+                <%= book.title %>
+              </h4>
+              <p class="card-text">
+              <%= form_for order_item, remote: true do |f| %>
+                <h5 class="text-right">Unit Price: <span style="color: green"><%= number_to_currency book.price %></span></h4>
+                <%= f.number_field :bookQuantity, value: 1, class: "form-control", min: 1 %>
+                <%= f.hidden_field :book_id, value: book.id %>
+                <%= f.hidden_field :order_id, value: 1 %>
+                <%= f.submit "Add to Cart", class: "btn btn-primary" %>
+              <% end %>
+              </p>
+            </div>
+          </div>
+        </div>
