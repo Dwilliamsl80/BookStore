@@ -6,7 +6,7 @@ class OrderItem < ApplicationRecord
 
 
   def unit_price
-     50
+     book.price
   end
 
   def total_price

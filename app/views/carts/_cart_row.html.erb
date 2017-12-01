@@ -1,13 +1,22 @@
-<div class="well">
+
+
+<section class="content-section-a">
+
+ <div class="container">
+        
 
   <div class="row">
-    <div class="col-xs-8">
+      <div class="col-lg-5 mr-auto">
+        <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+      </div>
+    <div class="col-lg-5 ml-auto">
+       <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
       <h4><%= book.title %></h4>
     </div>
     <div class="col-xs-4">
-
       <%= form_for order_item, remote: true do |f| %>
-        <h4 class="text-right">Unit Price: <span style="color: green"><%= number_to_currency order_item.unit_price %></span></h4>
+        <h4 class="text-right">Book Price: <span style="color: green"><%= number_to_currency order_item.unit_price %></span></h4>
         <div class="row">
           <div class="col-xs-4">
             <%= f.number_field :bookQuantity, value: order_item.bookQuantity.to_i, class: "form-control", min: 1 %>
@@ -25,4 +34,6 @@
     </div>
 
   </div>
-</div>
+
+  </div>
+</section>
