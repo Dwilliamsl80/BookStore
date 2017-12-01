@@ -38,7 +38,6 @@ ActiveRecord::Schema.define(version: 20171130010445) do
   end
 
   create_table "orders", id: :integer, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer "order_item_id", null: false
     t.date "orderDate"
   end
 
