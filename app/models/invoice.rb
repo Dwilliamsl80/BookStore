@@ -1,4 +1,4 @@
 class Invoice < ApplicationRecord
-		has_one :user
-		has_one :order
+		belongs_to :user
+		belongs_to :order
 end

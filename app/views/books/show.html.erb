@@ -5,14 +5,23 @@
   <%= @book.title %>
 </p>
 
+
 <p>
-  <strong>Author:</strong>
-  <%= @book.author %>
+  <strong>Categories:</strong>
+  <%= @book.categories.collect(&:name).join(", ") %>
+  
 </p>
 
 <p>
-  <strong>Category:</strong>
-  <%= @book.category %>
+  <strong>Authors:</strong>
+  <%= @book.authors.pluck(:first_name, :last_name).join(", ") %>
+  
+</p>
+
+<p>
+  <strong>Publishers:</strong>
+  <%= @book.publishers.collect(&:name).join(", ") %>
+  
 </p>
 
 <p>
@@ -20,10 +29,6 @@
   <%= @book.pages %>
 </p>
 
-<p>
-  <strong>Publisher:</strong>
-  <%= @book.publisher %>
-</p>
 
 <p>
   <strong>Price:</strong>
