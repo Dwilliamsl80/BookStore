@@ -1,0 +1,8 @@
+<% if @invoice.errors.any?%>
+	alert("not valid.")
+<% else %>
+	alert("Order Succesfully placed")
+	session.delete(:order_id)
+	redirect_to book_path
+ 	<%= render'layouts/cart_text' %>
+<% end %>

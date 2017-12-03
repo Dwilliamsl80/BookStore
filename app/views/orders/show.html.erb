@@ -1,9 +1,21 @@
-<p id="notice"><%= notice %></p>
+<h1>Order <%=@order.id%></h1>
+<table>
+  <tbody>
+  	<th>Quantity</th>
+  	<th>Cover</th>
+  	<th>Title</th>
+  	<th>Categories</th>
+  	<th>Authors</th>
+  	<th>Publishers</th>
+  	<th>Pages</th>
+  	<th>Price</th>
+  	<th>Total</th>
+    <% @order.order_items.each do |oi| %>
+      <tr>
+         <%= render "book_show", order_item: oi %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
 
-<p>
-  <strong>Orderdate:</strong>
-  <%= @order.orderDate %>
-</p>
-
-<%= link_to 'Edit', edit_order_path(@order) %> |
-<%= link_to 'Back', orders_path %>
+<%= link_to 'Back', invoices_path %>

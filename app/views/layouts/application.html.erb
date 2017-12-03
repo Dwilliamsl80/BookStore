@@ -35,6 +35,9 @@
           <li class ="nav-item">
           <%= link_to "Log Out", destroy_user_session_path, method: 'delete', :class => "nav-link" %>
           </li>
+          <li class ="nav-item">
+            <a class ="nav-link" href="/invoices">Order History</a>
+          </li>
           <% else %>
           <li class ="nav-item">
           <%= link_to "Sign up", new_user_registration_path, :class => 'nav-link' %>
@@ -66,7 +69,7 @@
           </li>
           <li class="footer-menu-divider list-inline-item">&sdot;</li>
           <li class="list-inline-item">
-            <a href="/about">About</a>
+            <a href="/pages/about">About</a>
           </li>
           <li class="footer-menu-divider list-inline-item">&sdot;</li>
           <li class="list-inline-item">

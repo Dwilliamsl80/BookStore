@@ -11,31 +11,6 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :bookID %>
-    <%= form.number_field :bookID, id: :invoice_bookID %>
-  </div>
-
-  <div class="field">
-    <%= form.label :employeeID %>
-    <%= form.number_field :employeeID, id: :invoice_employeeID %>
-  </div>
-
-  <div class="field">
-    <%= form.label :customerID %>
-    <%= form.number_field :customerID, id: :invoice_customerID %>
-  </div>
-
-  <div class="field">
-    <%= form.label :orderID %>
-    <%= form.number_field :orderID, id: :invoice_orderID %>
-  </div>
-
-  <div class="field">
-    <%= form.label :invoiceDate %>
-    <%= form.date_select :invoiceDate, id: :invoice_invoiceDate %>
-  </div>
-
   <div class="actions">
     <%= form.submit %>
   </div>
