@@ -1,0 +1,10 @@
+<td><%= order_item.bookQuantity %></td>
+<td><%= image_tag order_item.book.cover.url(:thumb) %></td>
+<td><%= order_item.book.title %></td>
+<td><%= order_item.book.categories.collect(&:name).join(", ") %></td>
+<td><%= order_item.book.authors.pluck(:first_name, :last_name).join(", ") %></td>
+<td><%= order_item.book.publishers.collect(&:name).join(", ") %></td>
+<td><%= order_item.book.pages %></td>
+<td><%= number_to_currency order_item.book.price %></td>
+<td><%= number_to_currency order_item.total_price %></td>
+

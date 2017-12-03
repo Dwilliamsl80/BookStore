@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+<%= image_tag @book.cover.url(:medium) %>
 
 <p>
   <strong>Title:</strong>
@@ -32,8 +32,6 @@
 
 <p>
   <strong>Price:</strong>
-  <%= @book.price %>
+ <span style="color: green"><%= number_to_currency @book.price %></span>
 </p>
-
-<%= link_to 'Edit', edit_book_path(@book) %> |
 <%= link_to 'Back', books_path %>
