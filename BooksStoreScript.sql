@@ -51,6 +51,7 @@ CREATE TABLE IF NOT EXISTS `bookstore`.`books` (
   `title` VARCHAR(200) NULL DEFAULT NULL,
   `pages` DECIMAL(5,0) NULL DEFAULT NULL,
   `price` DECIMAL(6,2) NULL DEFAULT NULL,
+  `stock` int(11),
   `cover_file_name` VARCHAR(255) NULL DEFAULT NULL,
   `cover_content_type` VARCHAR(255) NULL DEFAULT NULL,
   `cover_file_size` INT(11) NULL DEFAULT NULL,
@@ -235,12 +236,12 @@ insert into publishers (`name`) values('publisher3');
 insert into publishers (`name`) values('publisher4');
 insert into publishers (`name`) values('publisher5');
 
-insert into books values(null, 'The Fellowship of the Ring', 500, 30.23, 'Lotr1.jpg', 'image/jpeg',	40220, '2017-12-04 04:39:21');
-insert into books values(null, 'The Two Towers', 400, 30.23, 'Lotr2.jpg', 'image/jpeg',	129066,	'2017-12-04 04:38:53');
-insert into books values(null, 'Return of the King', 543, 35.23, 'Lotr3.jpg', 'image/jpeg', 109733, '2017-12-04 04:38:30');
-insert into books values(null, 'The Chamber of Secrets', 300, 25.99, 'Chamber.jpg',	'image/jpeg', 49670,'2017-12-04 04:38:10');
-insert into books values(null, 'Goblet of Fire', 200, 25.99, 'Goblet.jpg', 'image/jpeg', 25344,	'2017-12-04 04:37:54');
-insert into books values(null, 'Good Omens', 200, 25.99, 'GoodOmens.jpg', 'image/jpeg', 92632, '2017-12-04 04:36:00');
+insert into books values(null, 'The Fellowship of the Ring', 500, 30.23, 100, 'Lotr1.jpg', 'image/jpeg',	40220, '2017-12-04 04:39:21');
+insert into books values(null, 'The Two Towers', 400, 30.23, 100, 'Lotr2.jpg', 'image/jpeg',	129066,	'2017-12-04 04:38:53');
+insert into books values(null, 'Return of the King', 543, 35.23, 100, 'Lotr3.jpg', 'image/jpeg', 109733, '2017-12-04 04:38:30');
+insert into books values(null, 'The Chamber of Secrets', 300, 25.99, 100, 'Chamber.jpg',	'image/jpeg', 49670,'2017-12-04 04:38:10');
+insert into books values(null, 'Goblet of Fire', 200, 25.99, 100, 'Goblet.jpg', 'image/jpeg', 25344,	'2017-12-04 04:37:54');
+insert into books values(null, 'Good Omens', 200, 25.99, 100, 'GoodOmens.jpg', 'image/jpeg', 92632, '2017-12-04 04:36:00');
 
 insert into categories (`name`) values('Action');
 insert into categories (`name`) values('Fantasy');
@@ -278,6 +279,70 @@ insert into books_publishers (book_id, publisher_id) values(4,4);
 insert into books_publishers (book_id, publisher_id) values(5,5);
 insert into books_publishers (book_id, publisher_id) values(6,5);
 
+delimiter //
+drop trigger if exists `updateStock`//
+create trigger `updateStock` after insert on invoices
+for each row
+    begin
+    
+    
+    set @strIDS = (SELECT group_concat(order_items.id) AS order_items_list from order_items
+        join orders on order_items.order_id = orders.id
+        join invoices on invoices.order_id = orders.id
+        where invoices.id = new.id
+        group by invoices.id);
+    
+    IF @strIDs IS NULL THEN
+    SET @strIDs = '';
+  END IF;
+
+do_this:
+  LOOP
+    SET @strLen = CHAR_LENGTH(@strIDs);
+	update books 
+        set books.stock = books.stock -  (select order_items.bookQuantity from order_items
+        where order_items.id = substring_index(@strIDS, ',', 1))
+        
+        where books.id = (select id from (select books.id from books
+        join order_items on order_items.book_id = books.id
+        where order_items.id = substring_index(@strIDS, ',', 1)) as booksSub);
+    #UPDATE TestTable SET status = 'C' WHERE Id = SUBSTRING_INDEX(strIDs, ',', 1);
+		SET @SubStrLen = CHAR_LENGTH(SUBSTRING_INDEX(@strIDs, ',', 1)) + 2;
+		SET @strIDs = MID(@strIDs, @SubStrLen, @strLen);
+
+		IF @strIDs = '' THEN
+			LEAVE do_this;
+		END IF;
+	END LOOP do_this;
+end//
+
+drop trigger if exists `checkStock`//
+
+create trigger `checkStock` before update on books
+for each row
+    begin
+		if new.stock < 20 then
+			set new.stock = 50;
+		end if;
+    end//
+    
+drop procedure if exists `proc_InsertOrderItem`//
+CREATE PROCEDURE `proc_InsertOrderItem`(
+	in bookID int(11),
+    in orderID int(11),
+    in quantity int(11)
+)
+begin
+    if not exists (select * from order_items where book_id = bookID and order_id = orderID limit 1) then
+		insert into order_items (order_id, book_id, bookQuantity)
+        values (bookID, orderID, quantity);
+	else
+		update order_items
+        set bookQuantity = bookQuantity + quantity
+        where book_id = bookID and order_id = orderID;
+	end if;
+end//
+delimiter ;
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
