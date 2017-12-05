@@ -14,6 +14,8 @@ class InvoicesController < ApplicationController
 
   # GET /invoices/new
   def new
+    @invoice = Invoice.new
+    @order = current_order
   end
 
   # GET /invoices/1/edit
@@ -24,6 +26,7 @@ class InvoicesController < ApplicationController
   # POST /invoices.json
   def create
     @invoice = current_user.invoices.new(invoice_params)
+    @order = current_order
 
     respond_to do |format|
       if @invoice.save

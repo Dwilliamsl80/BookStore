@@ -15,6 +15,7 @@
   <% @order_items.each do |order_item| %>
     <%= render 'carts/cart_row', book: order_item.book, order_item: order_item, show_total: true %>
   <% end %>
+  <%= link_to "Checkout", new_invoice_path(@order) %>
   <%= render 'carts/checkout', order: current_order, user: current_user %>
   <%= button_to 'Checkout' ,{:controller => 'invoices', :action => 'create', :user_id => current_user.id, :order_id => current_order.id  } %>
 <% end %>

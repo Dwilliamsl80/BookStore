@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   resources :books
-  resource :cart, only: [:show]
+  resource :cart
   resources :order_items, only: [:create, :update, :destroy]
   resources :invoices
   resources :orders
