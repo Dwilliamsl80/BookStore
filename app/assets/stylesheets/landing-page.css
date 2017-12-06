@@ -46,6 +46,15 @@ th {
   background-size: cover;
 }
 
+.checkout {
+    float: right;
+    width: 200px;
+    margin-top: 5%;
+    border: 1px solid #2414ce;
+    padding: 5px;
+    margin-right: 5%;
+
+}
 .intro-message {
   position: relative;
   padding-top: 20%;

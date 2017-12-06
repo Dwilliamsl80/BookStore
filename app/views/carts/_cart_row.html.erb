@@ -12,7 +12,14 @@
     <div class="col-lg-5 ml-auto">
        <hr class="section-heading-spacer">
             <div class="clearfix"></div>
-      <h4><%= book.title %></h4>
+      <p>Title: <%= book.title %><br/><br/>
+      <%=pluralize(book.categories.size, 'Category') + ": " + book.categories.collect(&:name).join(", ") %><br/><br/>
+      <%=pluralize(book.authors.size, 'Author') + ": " + book.authors.pluck(:first_Name, :last_Name).join(" ") %><br/><br/>
+      <%=pluralize(book.publishers.size, 'Publisher') + ": " + book.publishers.collect(&:name).join(", ") %><br/><br/>
+      Pages: <%= book.pages %><br/><br/>
+      Price: <span style="color: green"><%= number_to_currency book.price %><br/><br/>
+     </p>  
+
     </div>
     <div class="col-xs-4">
       <%= form_for order_item, remote: true do |f| %>

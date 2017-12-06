@@ -10,6 +10,7 @@ class InvoicesController < ApplicationController
   # GET /invoices/1
   # GET /invoices/1.json
   def show
+    
   end
 
   # GET /invoices/new
@@ -25,18 +26,12 @@ class InvoicesController < ApplicationController
   # POST /invoices
   # POST /invoices.json
   def create
-    @invoice = current_user.invoices.new(invoice_params)
-    @order = current_order
-
-    respond_to do |format|
-      if @invoice.save
-        format.html { redirect_to @invoice, notice: 'Invoice was successfully created.' }
-        format.json { render :show, status: :created, location: @invoice }
-      else
-        format.html { render :new }
-        format.json { render json: @invoice.errors, status: :unprocessable_entity }
-      end
-    end
+    @invoice =Invoice.new
+    @invoice.user_id = current_user.id
+    @invoice.order_id = current_order.id
+    @invoice.save
+    session.delete(:order_id)
+    redirect_to "/books/"
   end
 
   # PATCH/PUT /invoices/1

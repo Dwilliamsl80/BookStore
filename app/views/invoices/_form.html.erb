@@ -1,3 +1,22 @@
+<table>
+  <tbody>
+    <th>Quantity</th>
+    <th>Cover</th>
+    <th>Title</th>
+    <th>Categories</th>
+    <th>Authors</th>
+    <th>Publishers</th>
+    <th>Pages</th>
+    <th>Price</th>
+    <th>Total</th>
+    <% @order.order_items.each do |oi| %>
+      <tr>
+         <%= render "orders/book_show", order_item: oi %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
 <%= form_with(model: invoice, local: true) do |form| %>
   <% if invoice.errors.any? %>
     <div id="error_explanation">
@@ -12,6 +31,6 @@
   <% end %>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Confirm Order", class: "btn btn-primary"  %>
   </div>
 <% end %>
