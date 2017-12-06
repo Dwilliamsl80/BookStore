@@ -7,6 +7,7 @@
               <h4 class="card-title">
                 <%= book.title %>
               </h4>
+              <h4><%= book.stock %> copies in stock</h4>
               <p class="card-text">
               <%= form_for order_item, remote: true do |f| %>
                 <h5 class="text-right">Book Price: <span style="color: green"><%= number_to_currency book.price %></span></h5>
