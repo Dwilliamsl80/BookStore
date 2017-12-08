@@ -1,21 +1,27 @@
-<table>
-  <tbody>
-    <th>Cover</th>
-    <th>Title</th>
-    <th><%= pluralize(@book.categories.size, 'Category') %></th>
-    <th><%= pluralize(@book.authors.size, 'Author') %></th>
-    <th><%= pluralize(@book.publishers.size, 'Publisher') %></th>
-    <th>Pages</th>
-    <th>Price</th>
-    <tr>
-      <td><%= image_tag @book.cover.url(:medium) %></td>
-      <td><%= @book.title %></td>
-      <td><%= @book.categories.collect(&:name).join(", ") %></td>
-      <td><%= @book.authors.pluck(:first_name, :last_name).join(", ") %></td>
-      <td><%= @book.publishers.collect(&:name).join(", ") %></td>
-      <td><%= @book.pages %></td>
-      <td><%= number_to_currency @book.price %></td>
-    </tr>
-  </tbody>
-</table>
-<%= link_to 'Back', books_path, class: "btn btn-danger" %>
+
+   <style>
+section {
+    padding-left: 120px;
+    padding-top: 10px;
+}
+</style>
+<section>
+
+<div id="books-show">
+  <h3><%= @book.title %></h3>
+  <div class = "books-show-left">
+    <%= image_tag @book.cover.url(:medium) %>
+  </div>
+  <div class = "books-show-right">
+    <h3>Book Info:</h3>
+    <ul>
+      <li><strong>Category:</strong><%= @book.categories.name %></li>
+      <li><strong>Author:</strong><%= @book.authors.pluck(:first_name, :last_name).join(", ") %></li>
+      <li><strong>Publisher:</strong><%= @book.publishers.name %></li>
+      <li><strong>Pages:</strong><%=@book.pages %></li>
+    </ul>
+    <%= link_to 'Back', books_path, class: "btn btn-danger" %>
+  </div>
+  <div class="clearfix"></div>
+
+</div>

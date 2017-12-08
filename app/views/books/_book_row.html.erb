@@ -1,12 +1,4 @@
-        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <div class="card-img-top">
-              <%= image_tag book.cover.url(:medium) %>
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">
-                <%= book.title %>
-              </h4>
+
               <h4><%= book.stock %> copies in stock</h4>
               <p class="card-text">
               <%= form_for order_item, remote: true do |f| %>
@@ -14,9 +6,6 @@
                 <%= f.number_field :bookQuantity, value: 1, class: "form-control", min: 1 %>
                 <%= f.hidden_field :book_id, value: book.id %>
                 <%= link_to 'Read More', book_path(book), class:"btn btn-primary"%>
-                <%= f.submit "Add to Cart", class: "btn btn-primary" %>
+                <%= f.submit "Add to Cart", class:"btn btn-primary" %>
               <% end %>
               </p>
-            </div>
-          </div>
-        </div>

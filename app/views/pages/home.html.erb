@@ -120,8 +120,7 @@
       </li>
       <li class="footer-menu-divider list-inline-item">&sdot;</li>
       <li class="list-inline-item">
-        <a href="#about">About</a>
-      </li>
+<%= link_to 'About', about_path , {:class=>"nav-link js-scroll-trigger"}%>      </li>
       <li class="footer-menu-divider list-inline-item">&sdot;</li>
       <li class="list-inline-item">
         <%= link_to('Books', {:controller => 'books', :action => 'index'})%>

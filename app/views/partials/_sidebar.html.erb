@@ -1,0 +1,30 @@
+<% if params[:controller] == 'about' %>
+<div class="well">
+	<h3>Location Info</h3>
+	<ul>
+		<li>The Bookstore</li>
+		<li>Addredd</li>
+		<li>Address</li>
+		<li>Phone:999-999-9999</li>
+		<li>Email: gg@email.com</li>
+	</ul>
+</div>
+<% end %>
+
+<% if params[:controller] == 'books' && params[:action] == 'index' %>
+<div class="list-group">
+	<% @categories.each do |category| %>
+		<%= link_to category.name, sort_path(category.id), class:'list-group-item' %>
+	<% end %>
+</div>
+<% end %>
+
+
+<%if params[:controller] == 'carts' && params[:action] == 'show' %>
+  <div class = "checkout">
+    <p>
+        Subtotal (<%= pluralize(current_order.order_items.size, 'Item')%>):  <span style="color: green"><%= number_to_currency current_order.subtotal %><br/><br/>
+        <%= link_to "Proceed to checkout", new_invoice_path, class:  "btn btn-primary" %>
+    </p>
+  </div>
+ <% end %>

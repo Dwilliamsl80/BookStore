@@ -13,12 +13,7 @@
   </p>
 <% else %>
 
-  <div class = "checkout">
-    <p>
-        Subtotal (<%= pluralize(current_order.order_items.size, 'Item')%>):  <span style="color: green"><%= number_to_currency current_order.subtotal %><br/><br/>
-        <%= link_to "Proceed to checkout", new_invoice_path, class:  "btn btn-primary" %>
-    </p>
-  </div>
+
   <% @order_items.each do |order_item| %>
     <%= render 'carts/cart_row', book: order_item.book, order_item: order_item, show_total: true %>
   <% end %>
