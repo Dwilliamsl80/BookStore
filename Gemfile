@@ -10,6 +10,7 @@ gem 'rails_admin', '~>1.2'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'devise'
 gem 'yaml_db'
+gem 'jquery-rails'
 
 gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
 
