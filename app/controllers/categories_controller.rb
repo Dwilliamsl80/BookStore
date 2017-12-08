@@ -10,6 +10,8 @@ class CategoriesController < ApplicationController
   # GET /categories/1
   # GET /categories/1.json
   def show
+    @page_title = 'Add new Category'
+    @category = Category.new
   end
 
   # GET /categories/new
