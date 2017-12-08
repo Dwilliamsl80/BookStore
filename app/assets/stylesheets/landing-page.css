@@ -55,6 +55,16 @@ th {
     margin-right: 5%;
 
 }
+
+.category {
+    float: right;
+    width: 200px;
+    margin-top: 5%;
+    border: 1px solid #2414ce;
+    padding: 5px;
+    margin-left: 10%;
+
+}
 .intro-message {
   position: relative;
   padding-top: 20%;
